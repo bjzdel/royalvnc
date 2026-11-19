@@ -50,7 +50,7 @@ let package = Package(
     dependencies: [
         // TODO: Switch back to main repo once our FoundationEssentials changes are merged upstream
 //        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.9.0")
-        .package(url: "https://github.com/royalapplications/CryptoSwift.git", branch: "foundationessentials"),
+        .package(url: "https://github.com/bjzdel/CryptoSwift.git", exact: "1.9.0-miniremote.1"), // MiniRemote: pinned fork of royalapplications/CryptoSwift foundationessentials @ a59b4d9
         
         .package(url: "https://github.com/tayloraswift/swift-jpeg", from: "2.0.0"),
         .package(url: "https://github.com/tayloraswift/swift-png", from: "4.4.0")
