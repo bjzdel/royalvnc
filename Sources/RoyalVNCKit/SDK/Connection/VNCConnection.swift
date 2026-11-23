@@ -66,7 +66,7 @@ public final class VNCConnection: NSObjectOrAnyObject {
 	let clipboard: VNCClipboard
 	let clipboardMonitor: VNCClipboardMonitor
 
-	var clientToServerMessageQueue = Queue<VNCSendableMessage>()
+	let clientToServerMessageQueue = SynchronizedQueue<VNCSendableMessage>()
 
     var mouseButtonState: VNCProtocol.MousePointerButton = [ ]
 
